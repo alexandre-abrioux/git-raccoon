@@ -1,4 +1,5 @@
 import { Select } from "@cliffy/prompt";
+import { Cell, Table } from "@cliffy/table";
 import { type Config } from "~/types.ts";
 import {
   getBranchName,
@@ -13,6 +14,7 @@ import {
   ensureModel,
 } from "~/services/ollama.ts";
 import { log } from "~/utils/logger.ts";
+import { colors } from "@cliffy/ansi/colors";
 
 const SYSTEM_PROMPT = `You will act as a git commit message generator.
 When receiving a git branch name and diff, you will ONLY output the commit message itself, nothing else.
@@ -95,7 +97,7 @@ const generateCommitMessage = async (
   const content = await callOllama(
     config,
     payload,
-    "Generating commit message...",
+    "🦝 Generating commit message...",
   );
 
   try {
@@ -120,11 +122,10 @@ const generateCommitMessage = async (
 };
 
 const confirmCommit = async (message: string): Promise<void> => {
-  log.info("Generated commit message:");
-  log.info("-------------------------");
-  log.info(message);
-  log.info("-------------------------");
-  log.info("");
+  log.info("🦝 Generated commit message:");
+
+  const table = new Table([new Cell(colors.bold.blue(message))]);
+  table.border().render();
 
   const choice = await Select.prompt({
     message: "Do you want to use or edit this commit message?",
@@ -139,15 +140,14 @@ const confirmCommit = async (message: string): Promise<void> => {
   switch (choice) {
     case "y":
       await gitCommit(message);
-      log.info("Changes committed with the generated message.");
+      log.debug("Changes committed with the generated message.");
       break;
     case "n":
-      log.debug("Generated commit message only (not committed):");
-      log.debug(message);
+      log.debug("Generated commit message only (not committed).");
       break;
     case "e":
       await gitCommitWithEdit(message);
-      log.info("Changes committed with the edited message.");
+      log.debug("Changes committed with the edited message.");
       break;
   }
 };
