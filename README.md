@@ -9,7 +9,7 @@
 
 # GitRaccoon
 
-An AI-powered git helper that generates branch names and commit messages using a
+An AI-powered Git helper that generates branch names and commit messages using a
 local [Ollama](https://ollama.com) model.
 
 ## 📦 Requirements
