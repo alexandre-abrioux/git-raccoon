@@ -19,6 +19,8 @@ local [Ollama](https://ollama.com) model.
 
 ## 🚀 Installation
 
+Install `git-raccoon` globally via `deno install`:
+
 ```sh
 deno install \
   --global \
@@ -29,7 +31,9 @@ deno install \
   jsr:@git-raccoon/cli
 ```
 
-This installs `git-raccoon` globally via `deno install`. To uninstall:
+To update, run the same command with the `-f` argument (forces replacement).
+
+To uninstall:
 
 ```sh
 deno uninstall --global git-raccoon
