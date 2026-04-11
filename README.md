@@ -81,10 +81,12 @@ automatically.
 
 ### 🤖 Recommended models
 
-| Hardware                          | Recommended model            |
-| --------------------------------- | ---------------------------- |
-| 🖥️ PC with a dedicated GPU        | `qwen2.5-coder:7b` (default) |
-| 💻 Laptop without a dedicated GPU | `qwen2.5-coder:3b`           |
+| Hardware                   | Recommended model            |
+| -------------------------- | ---------------------------- |
+| 🖥️ With a dedicated GPU    | `qwen2.5-coder:7b` (default) |
+| 💻 Without a dedicated GPU | `qwen2.5-coder:3b`           |
+
+Find all available `qwen2.5-coder` sizes here: https://ollama.com/library/qwen2.5-coder
 
 ## 🔗 Git aliases
 
