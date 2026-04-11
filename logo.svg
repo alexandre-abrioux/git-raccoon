@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  width="126.38"
+  height="151.45"
+  version="1.1"
+  viewBox="0 0 126.38 151.45"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>.outline { stroke: #2b2b2b; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .fur { fill: #c9c3b8; }
+    .dark { fill: #2b2b2b; }
+    .light { fill: #f4f1ea; }
+    .accent { fill: #ff7f50; }</style>
+  <!-- Head shape -->
+  <path
+    class="fur outline"
+    d="m63.188 11.25c-40 0-70 40-60 80 10 50 110 50 120 0 10-40-20-80-60-80z"
+  />
+  <!-- Ears -->
+  <path class="dark outline" d="m23.188 21.25-15-20 30 10z" />
+  <path class="dark outline" d="m103.19 21.25 15-20-30 10z" />
+  <!-- Inner ears -->
+  <path class="light" d="m25.188 19.25-12-13 22 7z" />
+  <path class="light" d="m101.19 19.25 12-13-22 7z" />
+  <!-- Eye mask -->
+  <path class="dark" d="m13.188 66.25c20-30 80-30 100 0-20 25-80 25-100 0z" />
+  <!-- Eyes -->
+  <circle cx="38.188" cy="66.25" r="6" fill="#fff" />
+  <circle cx="88.188" cy="66.25" r="6" fill="#fff" />
+  <!-- Pupils -->
+  <circle class="dark" cx="38.188" cy="66.25" r="3" />
+  <circle class="dark" cx="88.188" cy="66.25" r="3" />
+  <!-- Snout -->
+  <ellipse class="light outline" cx="63.188" cy="91.25" rx="20" ry="14" />
+  <!-- Nose -->
+  <ellipse class="dark" cx="63.188" cy="86.25" rx="5" ry="4" />
+  <!-- Mouth -->
+  <path class="outline" d="m53.188 96.25q10 10 20 0" fill="none" />
+  <!-- Whiskers -->
+  <path class="outline" d="m43.188 91.25-25-5m25 10h-25m25 5-25 5" />
+  <path class="outline" d="m83.188 91.25 25-5m-25 10h25m-25 5 25 5" />
+  <!-- Text -->
+  <text
+    x="63.18758"
+    y="151.24988"
+    fill="#2b2b2b"
+    font-family="Arial, sans-serif"
+    font-size="16px"
+    text-anchor="middle"
+  >GitRaccoon</text>
+</svg>

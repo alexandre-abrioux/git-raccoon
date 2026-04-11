@@ -1,0 +1,15 @@
+{
+  "name": "@git-raccoon/cli",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": "./src/index.ts",
+  "imports": {
+    "~/": "./src/",
+    "@cliffy/ansi": "jsr:@cliffy/ansi@^1.0.0",
+    "@cliffy/command": "jsr:@cliffy/command@^1.0.0",
+    "@cliffy/prompt": "jsr:@cliffy/prompt@^1.0.0"
+  },
+  "tasks": {
+    "run": "bin/git-raccoon"
+  }
+}
