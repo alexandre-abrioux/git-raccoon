@@ -32,7 +32,12 @@ const generateBranchName = async (
     stream: false,
     options: { temperature: 0.3 },
   };
-  return await callOllama(config, payload, "Generating branch name...");
+  const branchName = await callOllama(
+    config,
+    payload,
+    "Generating branch name",
+  );
+  return branchName.trim();
 };
 
 export const cmdCheckout = async (config: Config): Promise<void> => {
@@ -43,11 +48,7 @@ export const cmdCheckout = async (config: Config): Promise<void> => {
     branchName = getRandomName();
   } else {
     await checkOllamaService(config);
-    log.debug("Ollama service is running.");
-    await ensureModel(config);
-    log.debug(`Model '${config.model}' is available.`);
-    log.debug("Generating branch name with Ollama...");
-    branchName = (await generateBranchName(config, diff)).trim();
+    branchName = await generateBranchName(config, diff);
   }
 
   if (!branchName) {
@@ -55,5 +56,6 @@ export const cmdCheckout = async (config: Config): Promise<void> => {
     Deno.exit(1);
   }
 
+  Deno.stdout.write(new TextEncoder().encode("🦝 "));
   await gitCheckoutNewBranch(branchName);
 };

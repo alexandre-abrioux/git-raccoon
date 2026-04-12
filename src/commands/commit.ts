@@ -97,7 +97,7 @@ const generateCommitMessage = async (
   const content = await callOllama(
     config,
     payload,
-    "🦝 Generating commit message...",
+    "Generating commit message",
   );
 
   try {
@@ -167,13 +167,7 @@ export const cmdCommit = async (
   }
 
   await checkOllamaService(config);
-  log.debug("Ollama service is running.");
-  await ensureModel(config);
-  log.debug(`Model '${config.model}' is available.`);
-
-  log.debug("Generating commit message with Ollama...");
   const message = await generateCommitMessage(config, branchName, diff);
-
   if (!message.trim()) {
     log.error("Error: Failed to generate commit message");
     Deno.exit(1);
