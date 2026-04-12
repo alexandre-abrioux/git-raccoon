@@ -117,21 +117,14 @@ git aicheckout     # create a new AI-named branch
 
 Many thanks to Martin Wimpress for his work on [faff](https://github.com/wimpysworld/faff) on which this project was heavily inspired.
 
-## 🔍 Similar projects
+## 🔍 Similar tools
 
-| Project                                                         | Branch generation | Commit messages | Provider              |
-| --------------------------------------------------------------- | :---------------: | :-------------: | --------------------- |
-| [gitsloth](https://github.com/saccofrancesco/gitsloth)          |        ❌         |       ✅        | ☁️ Online LLM         |
-| [agentsdance/aigit](https://github.com/agentsdance/aigit)       |        ❌         |       ✅        | ☁️ Online LLM         |
-| [hardiksondagar/aigit](https://github.com/hardiksondagar/aigit) |        ❌         |       ✅        | ☁️ Online LLM         |
-| [faff](https://github.com/wimpysworld/faff)                     |        ❌         |       ✅        | 🏠 Local (Ollama)     |
-| [gitllama](https://github.com/brngdsn/gitllama)                 |        ❌         |       ✅        | 🏠 Local (Ollama)     |
-| **git-raccoon**                                                 |      **✅**       |     **✅**      | 🏠 **Local (Ollama)** |
-
-## 🧪 Development
-
-Run without installing:
-
-```sh
-deno task run <command>
-```
+| Project                                                         | Branch | Commit | PR  | Provider              |
+| --------------------------------------------------------------- | :----: | :----: | :-: | --------------------- |
+| [gitsloth](https://github.com/saccofrancesco/gitsloth)          |   ❌   |   ✅   | ❌  | ☁️ Online LLM         |
+| [agentsdance/aigit](https://github.com/agentsdance/aigit)       |   ❌   |   ✅   | ❌  | ☁️ Online LLM         |
+| [hardiksondagar/aigit](https://github.com/hardiksondagar/aigit) |   ✅   |   ✅   | ✅  | ☁️ Online LLM         |
+| [gitai-cli](https://github.com/keli-wen/gitai-cli)              |   ❌   |   ✅   | ✅  | ☁️ Online + 🏠 Local  |
+| [faff](https://github.com/wimpysworld/faff)                     |   ❌   |   ✅   | ❌  | 🏠 Local (Ollama)     |
+| [gitllama](https://github.com/brngdsn/gitllama)                 |   ❌   |   ✅   | ❌  | 🏠 Local (Ollama)     |
+| **git-raccoon**                                                 | **✅** | **✅** | ❌  | 🏠 **Local (Ollama)** |
