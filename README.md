@@ -124,6 +124,7 @@ Many thanks to Martin Wimpress for his work on [faff](https://github.com/wimpysw
 | [gitsloth](https://github.com/saccofrancesco/gitsloth)          |          ❌          |          ✅          |        ❌        | ☁️ Online LLM         |
 | [agentsdance/aigit](https://github.com/agentsdance/aigit)       |          ❌          |          ✅          |        ❌        | ☁️ Online LLM         |
 | [hardiksondagar/aigit](https://github.com/hardiksondagar/aigit) |          ✅          |          ✅          |        ✅        | ☁️ Online LLM         |
+| [cai](https://github.com/thorstenfoltz/cai)                     |          ❌          |          ✅          |        ❌        | ☁️ Online + 🏠 Local  |
 | [gitai-cli](https://github.com/keli-wen/gitai-cli)              |          ❌          |          ✅          |        ✅        | ☁️ Online + 🏠 Local  |
 | [faff](https://github.com/wimpysworld/faff)                     |          ❌          |          ✅          |        ❌        | 🏠 Local (Ollama)     |
 | [gitllama](https://github.com/brngdsn/gitllama)                 |          ❌          |          ✅          |        ❌        | 🏠 Local (Ollama)     |
