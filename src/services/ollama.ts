@@ -59,7 +59,7 @@ export const ensureModel = async (config: Config): Promise<void> => {
   }
 
   const dec = new TextDecoder();
-  const spinner = new Spinner("Downloading {spinner} 0%", "rotate");
+  const spinner = new Spinner("Downloading {spinner} 0%", "download");
   spinner.start();
 
   for await (const chunk of pullResp.body) {

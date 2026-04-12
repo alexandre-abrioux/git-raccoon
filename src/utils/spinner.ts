@@ -16,7 +16,7 @@ export class Spinner {
 
   constructor(
     private message: string,
-    private readonly type: "ellipsis" | "download" = "ellipsis",
+    private readonly type: "ellipsis" | "download",
   ) {}
 
   private loop() {
