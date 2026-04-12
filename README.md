@@ -119,12 +119,12 @@ Many thanks to Martin Wimpress for his work on [faff](https://github.com/wimpysw
 
 ## 🔍 Similar tools
 
-| Project                                                         | Branch | Commit | PR  | Provider              |
-| --------------------------------------------------------------- | :----: | :----: | :-: | --------------------- |
-| [gitsloth](https://github.com/saccofrancesco/gitsloth)          |   ❌   |   ✅   | ❌  | ☁️ Online LLM         |
-| [agentsdance/aigit](https://github.com/agentsdance/aigit)       |   ❌   |   ✅   | ❌  | ☁️ Online LLM         |
-| [hardiksondagar/aigit](https://github.com/hardiksondagar/aigit) |   ✅   |   ✅   | ✅  | ☁️ Online LLM         |
-| [gitai-cli](https://github.com/keli-wen/gitai-cli)              |   ❌   |   ✅   | ✅  | ☁️ Online + 🏠 Local  |
-| [faff](https://github.com/wimpysworld/faff)                     |   ❌   |   ✅   | ❌  | 🏠 Local (Ollama)     |
-| [gitllama](https://github.com/brngdsn/gitllama)                 |   ❌   |   ✅   | ❌  | 🏠 Local (Ollama)     |
-| **git-raccoon**                                                 | **✅** | **✅** | ❌  | 🏠 **Local (Ollama)** |
+| Project                                                         | Branch<br>generation | Commit<br>generation | PR<br>generation | Provider              |
+| --------------------------------------------------------------- | :------------------: | :------------------: | :--------------: | --------------------- |
+| [gitsloth](https://github.com/saccofrancesco/gitsloth)          |          ❌          |          ✅          |        ❌        | ☁️ Online LLM         |
+| [agentsdance/aigit](https://github.com/agentsdance/aigit)       |          ❌          |          ✅          |        ❌        | ☁️ Online LLM         |
+| [hardiksondagar/aigit](https://github.com/hardiksondagar/aigit) |          ✅          |          ✅          |        ✅        | ☁️ Online LLM         |
+| [gitai-cli](https://github.com/keli-wen/gitai-cli)              |          ❌          |          ✅          |        ✅        | ☁️ Online + 🏠 Local  |
+| [faff](https://github.com/wimpysworld/faff)                     |          ❌          |          ✅          |        ❌        | 🏠 Local (Ollama)     |
+| [gitllama](https://github.com/brngdsn/gitllama)                 |          ❌          |          ✅          |        ❌        | 🏠 Local (Ollama)     |
+| **git-raccoon**                                                 |        **✅**        |        **✅**        |        ❌        | 🏠 **Local (Ollama)** |
