@@ -12,6 +12,8 @@
 An AI-powered Git helper that generates branch names and commit messages using a
 local [Ollama](https://ollama.com) model.
 
+<p align="center"><img src="demo.gif" alt="GitRaccoon logo" /></p>
+
 ## 📦 Requirements
 
 - [Deno](https://deno.com) v2+
@@ -99,8 +101,8 @@ subcommands:
 
 ```gitconfig
 [alias]
-  aicommit = "!f(){ git-raccoon commit $1; }; f"
-  aicheckout = "!f(){ git-raccoon checkout $1; }; f"
+  aicommit = "!f(){ git-raccoon commit \"$@\"; }; f"
+  aicheckout = "!f(){ git-raccoon checkout \"$@\"; }; f"
 ```
 
 Then use:
@@ -113,18 +115,18 @@ git aicheckout     # create a new AI-named branch
 
 ## 🙏 Credits
 
-Heavily inspired by [faff](https://github.com/wimpysworld/faff).
+Many thanks to Martin Wimpress for his work on [faff](https://github.com/wimpysworld/faff) on which this project was heavily inspired.
 
 ## 🔍 Similar projects
 
-| Project                                                           | Branch generation | Commit messages | Provider                             |
-| ----------------------------------------------------------------- | :---------------: | :-------------: | ------------------------------------ |
-| [faff](https://github.com/wimpysworld/faff)                       |        ❌         |       ✅        | 🏠 Local (Ollama)                    |
-| [gitllama](https://github.com/brngdsn/gitllama)                   |        ❌         |       ✅        | 🏠 Local (Ollama)                    |
-| [gitsloth](https://github.com/saccofrancesco/gitsloth)            |        ❌         |       ✅        | ☁️ Online (OpenAI)                   |
-| [aigit (agentsdance)](https://github.com/agentsdance/aigit)       |        ❌         |       ✅        | ☁️ Online (OpenAI, DeepSeek, Gemini) |
-| [aigit (hardiksondagar)](https://github.com/hardiksondagar/aigit) |        ❌         |       ✅        | ☁️ Online (OpenAI)                   |
-| **git-raccoon**                                                   |      **✅**       |     **✅**      | 🏠 **Local (Ollama)**                |
+| Project                                                         | Branch generation | Commit messages | Provider              |
+| --------------------------------------------------------------- | :---------------: | :-------------: | --------------------- |
+| [gitsloth](https://github.com/saccofrancesco/gitsloth)          |        ❌         |       ✅        | ☁️ Online LLM         |
+| [agentsdance/aigit](https://github.com/agentsdance/aigit)       |        ❌         |       ✅        | ☁️ Online LLM         |
+| [hardiksondagar/aigit](https://github.com/hardiksondagar/aigit) |        ❌         |       ✅        | ☁️ Online LLM         |
+| [faff](https://github.com/wimpysworld/faff)                     |        ❌         |       ✅        | 🏠 Local (Ollama)     |
+| [gitllama](https://github.com/brngdsn/gitllama)                 |        ❌         |       ✅        | 🏠 Local (Ollama)     |
+| **git-raccoon**                                                 |      **✅**       |     **✅**      | 🏠 **Local (Ollama)** |
 
 ## 🧪 Development
 
