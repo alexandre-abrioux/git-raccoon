@@ -2,6 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
+    "helpers:pinGitHubActionDigests",
   ],
   "packageRules": [
     {
@@ -12,6 +13,11 @@
       // disable version updates for JavaScript packages
       "matchCategories": ["js"],
       "enabled": false,
+    },
+    {
+      // avoid floating tags for GitHub actions
+      "matchManagers": ["github-actions"],
+      "rangeStrategy": "pin"
     },
   ],
   // enable security updates, also for JavaScript packages
