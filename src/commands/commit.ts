@@ -1,6 +1,6 @@
 import { Select } from "@cliffy/prompt";
 import { Cell, Table } from "@cliffy/table";
-import { type Config } from "~/types.ts";
+import type { Config } from "~/types.ts";
 import {
   getBranchName,
   getStagedDiff,
@@ -8,11 +8,7 @@ import {
   gitCommit,
   gitCommitWithEdit,
 } from "~/services/git.ts";
-import {
-  callOllama,
-  checkOllamaService,
-  ensureModel,
-} from "~/services/ollama.ts";
+import { callOllama, checkOllamaService } from "~/services/ollama.ts";
 import { log } from "~/utils/logger.ts";
 import { colors } from "@cliffy/ansi/colors";
 

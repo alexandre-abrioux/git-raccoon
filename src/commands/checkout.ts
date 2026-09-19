@@ -1,11 +1,7 @@
-import { type Config } from "~/types.ts";
+import type { Config } from "~/types.ts";
 import { getUnstagedDiff, gitCheckoutNewBranch } from "~/services/git.ts";
 import { getRandomName } from "~/utils/names.ts";
-import {
-  callOllama,
-  checkOllamaService,
-  ensureModel,
-} from "~/services/ollama.ts";
+import { callOllama, checkOllamaService } from "~/services/ollama.ts";
 import { log } from "~/utils/logger.ts";
 
 const SYSTEM_PROMPT = `You will act as a git branch name generator.
