@@ -25,6 +25,7 @@ const generateBranchName = async (
       { role: "system", content: SYSTEM_PROMPT },
       { role: "user", content: `Git diff:\n${diff}` },
     ],
+    think: false,
     stream: false,
     options: { temperature: 0.3 },
   };

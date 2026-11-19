@@ -21,7 +21,11 @@ local [Ollama](https://ollama.com) model.
 
 ## 🚀 Installation
 
+### from JSR
+
 Install `git-raccoon` globally via `deno install`:
+
+#### with Deno
 
 ```sh
 deno install \
@@ -34,6 +38,29 @@ deno install \
 ```
 
 To update, run the same command with the `-f` argument (forces replacement).
+
+#### with Pnpm/Yarn
+
+```sh
+pnpm add -g jsr:@git-raccoon/cli
+yarn add -g jsr:@git-raccoon/cli
+```
+
+### from GitHub
+
+```sh
+git clone git@github.com:alexandre-abrioux/git-raccoon.git
+deno install \
+  --global \
+  --name=git-raccoon \
+  --allow-env=OLLAMA_HOST,OLLAMA_PORT,OLLAMA_MODEL,OLLAMA_TIMEOUT \
+  --allow-net \
+  --allow-run \
+  --config=deno.json \
+  bin/git-raccoon
+```
+
+### uninstall
 
 To uninstall:
 
@@ -92,7 +119,7 @@ automatically.
 | 🖥️ With a dedicated GPU    | `qwen2.5-coder:7b` (default) |
 | 💻 Without a dedicated GPU | `qwen2.5-coder:3b`           |
 
-Find all available `qwen2.5-coder` sizes here: https://ollama.com/library/qwen2.5-coder
+Find all available `qwen2.5-coder` sizes here: <https://ollama.com/library/qwen2.5-coder>
 
 ## 🔗 Git aliases
 

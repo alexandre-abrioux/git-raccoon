@@ -61,6 +61,7 @@ const generateCommitMessage = async (
         content: `Branch name: \`${branchName}\`\n\nGit diff:\n${diff}`,
       },
     ],
+    think: false,
     stream: false,
     format: {
       type: "object",
