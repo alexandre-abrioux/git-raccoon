@@ -21,11 +21,18 @@ local [Ollama](https://ollama.com) model.
 
 ## 🚀 Installation
 
-### from JSR
+### With Pnpm/Yarn
+
+```sh
+pnpm add -g jsr:@git-raccoon/cli
+yarn add -g jsr:@git-raccoon/cli
+```
+
+### With Deno
+
+#### (option 1) From JSR
 
 Install `git-raccoon` globally via `deno install`:
-
-#### with Deno
 
 ```sh
 deno install \
@@ -39,14 +46,7 @@ deno install \
 
 To update, run the same command with the `-f` argument (forces replacement).
 
-#### with Pnpm/Yarn
-
-```sh
-pnpm add -g jsr:@git-raccoon/cli
-yarn add -g jsr:@git-raccoon/cli
-```
-
-### from GitHub
+#### (option 2) From the local Git copy
 
 ```sh
 git clone git@github.com:alexandre-abrioux/git-raccoon.git
@@ -60,9 +60,7 @@ deno install \
   bin/git-raccoon
 ```
 
-### uninstall
-
-To uninstall:
+#### To uninstall:
 
 ```sh
 deno uninstall --global git-raccoon
